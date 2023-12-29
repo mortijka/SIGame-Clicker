@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace SIGame_Clicker
+namespace SIGame_Clicker.Views
 {
     /// <summary>
     /// Логика взаимодействия для TransparentWindow.xaml

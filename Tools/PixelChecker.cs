@@ -6,18 +6,18 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SIGame_Clicker
+namespace SIGame_Clicker.Tools
 {
     public class PixelChecker
     {
         [DllImport("user32.dll")]
-        public static extern IntPtr GetDC(IntPtr hWnd);
+        public static extern nint GetDC(nint hWnd);
 
         [DllImport("user32.dll")]
-        public static extern Int32 ReleaseDC(IntPtr hWnd, IntPtr hDC);
+        public static extern int ReleaseDC(nint hWnd, nint hDC);
 
         [DllImport("gdi32.dll")]
-        public static extern uint GetPixel(IntPtr hDC, int x, int y);
+        public static extern uint GetPixel(nint hDC, int x, int y);
 
         public static bool IsPixelWhite(int x, int y)
         {
@@ -27,9 +27,9 @@ namespace SIGame_Clicker
 
         private static Color GetPixelColor(int x, int y)
         {
-            IntPtr hdc = GetDC(IntPtr.Zero);
+            nint hdc = GetDC(nint.Zero);
             uint pixel = GetPixel(hdc, x, y);
-            ReleaseDC(IntPtr.Zero, hdc);
+            ReleaseDC(nint.Zero, hdc);
 
             int red = (int)(pixel & 0x000000FF);
             int green = (int)((pixel & 0x0000FF00) >> 8);

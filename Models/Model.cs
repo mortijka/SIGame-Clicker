@@ -1,7 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using SIGame_Clicker.Tools;
 using System.Windows.Input;
 
-namespace SIGame_Clicker
+namespace SIGame_Clicker.Models
 {
     public class Model : ObservableObject
     {

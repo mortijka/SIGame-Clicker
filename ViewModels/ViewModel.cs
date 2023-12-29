@@ -1,6 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Newtonsoft.Json;
+using SIGame_Clicker.Models;
+using SIGame_Clicker.Tools;
+using SIGame_Clicker.Views;
 using System.DirectoryServices;
 using System.IO;
 using System.Windows;
@@ -10,7 +13,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using WindowsInput;
 
-namespace SIGame_Clicker
+namespace SIGame_Clicker.ViewModels
 {
     public class ViewModel : ObservableObject
     {

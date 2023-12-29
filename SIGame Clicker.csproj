@@ -7,7 +7,15 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>nix.ico</ApplicationIcon>
+    <ApplicationIcon>Images\nix.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="nix.ico" />
+    <Content Include="Images\nix.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,7 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="nix.ico">
+    <Resource Include="Images\nix.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

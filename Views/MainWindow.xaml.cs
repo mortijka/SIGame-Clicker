@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using SIGame_Clicker.ViewModels;
+using System.ComponentModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,7 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SIGame_Clicker
+namespace SIGame_Clicker.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
